@@ -26,14 +26,20 @@
             android:textStyle="bold" />
 
         <TextView
+            android:layout_marginBottom="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/script"
-            android:layout_marginBottom="40dp"
             android:text="For Healing And Peace "
             android:textColor="@color/white"
             android:textSize="38sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:src="@drawable/holidays"
+            android:layout_width="300dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="350dp"/>
 
         <Button
             android:id="@+id/btn_get_start"
@@ -41,9 +47,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="30dp"
-            android:layout_marginTop="50dp"
             android:layout_marginRight="30dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             android:clickable="true"
             android:elevation="5dp"
             android:text="GET STARTED" />
