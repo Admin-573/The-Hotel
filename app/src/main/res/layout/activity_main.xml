@@ -36,7 +36,7 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:src="@drawable/holidays"
+            android:src="@drawable/holidays1"
             android:layout_width="300dp"
             android:layout_marginBottom="5dp"
             android:layout_height="350dp"/>
