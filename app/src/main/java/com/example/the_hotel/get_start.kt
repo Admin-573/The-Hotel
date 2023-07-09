@@ -14,6 +14,7 @@ class get_start : AppCompatActivity() {
 
     lateinit var btn_signup : Button
     lateinit var btn_google_done : Button
+    lateinit var btn_apple_done : Button
 
     lateinit var edfname : EditText
     lateinit var edlname : EditText
@@ -32,6 +33,7 @@ class get_start : AppCompatActivity() {
 
         btn_signup = findViewById(R.id.btn_signup)
         btn_google_done = findViewById(R.id.btn_google_selection)
+        btn_apple_done = findViewById(R.id.btn_apple_selection)
 
         edfname = findViewById(R.id.edtFName)
         edlname = findViewById(R.id.edtLName)
@@ -54,6 +56,9 @@ class get_start : AppCompatActivity() {
             Toast.makeText(this,"Under Development !",Toast.LENGTH_SHORT).show()
         }
 
+        btn_apple_done.setOnClickListener{
+            Toast.makeText(this,"Under Development !",Toast.LENGTH_SHORT).show()
+        }
 
         txt_sign_in_1.setOnClickListener{
             val go_to_signin = Intent(this,login::class.java)
