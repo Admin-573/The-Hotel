@@ -24,7 +24,7 @@
         android:layout_gravity="left"
         android:textSize="18dp"
         android:layout_marginLeft="15dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="10dp"
         android:text=" Hello Dear ! Please Enter Your Details. "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -44,7 +44,6 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="130dp"
-            android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             app:boxCornerRadiusBottomEnd="25dp"
             app:boxCornerRadiusTopStart="25dp"

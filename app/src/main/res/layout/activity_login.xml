@@ -35,8 +35,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="10dp"
         android:layout_marginBottom="5dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         app:boxCornerRadiusBottomEnd="25dp"
         app:boxCornerRadiusTopStart="25dp"
         app:boxCornerRadiusTopEnd="25dp"
@@ -56,8 +56,8 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         app:boxCornerRadiusBottomEnd="25dp"
         app:boxCornerRadiusTopStart="25dp"
         app:boxCornerRadiusTopEnd="25dp"
@@ -108,6 +108,7 @@
 
     <LinearLayout
         android:gravity="center"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -127,7 +128,7 @@
 
         <View
             android:background="@color/black"
-            android:layout_width="1dp"
+            android:layout_width="2dp"
             android:layout_height="50dp"/>
 
         <ImageView
