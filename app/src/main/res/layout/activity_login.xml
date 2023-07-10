@@ -41,15 +41,15 @@
         app:boxCornerRadiusTopStart="25dp"
         app:boxCornerRadiusTopEnd="25dp"
         app:boxCornerRadiusBottomStart="25dp"
-        app:placeholderText="you@example.com"
+        app:placeholderText="Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/user_email"
-            android:hint=" Enter Email"
+            android:hint=" Enter Name"
             android:drawableRight="@drawable/email_24"
-            android:inputType="textEmailAddress"
+            android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 

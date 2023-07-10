@@ -94,6 +94,7 @@
             app:boxCornerRadiusTopStart="25dp"
             app:boxCornerRadiusBottomEnd="25dp"
             android:layout_width="250dp"
+            app:placeholderText="you@example.com"
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -113,36 +114,35 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_marginBottom="5dp"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="horizontal"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
 
         <ImageView
-            android:src="@drawable/phone"
-            android:layout_marginRight="2dp"
             android:layout_width="60dp"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/phone" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="240dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             app:boxCornerRadiusBottomEnd="25dp"
-            app:boxCornerRadiusTopStart="25dp"
-            app:boxCornerRadiusTopEnd="25dp"
             app:boxCornerRadiusBottomStart="25dp"
-            android:layout_height="wrap_content">
+            app:boxCornerRadiusTopEnd="25dp"
+            app:boxCornerRadiusTopStart="25dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtPhone"
-                android:inputType="phone"
-                android:hint="Enter Phone No."
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone No."
+                android:inputType="phone" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
