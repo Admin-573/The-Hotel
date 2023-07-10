@@ -64,7 +64,7 @@
         app:boxCornerRadiusBottomStart="25dp"
         app:placeholderText="Atleast 8 Charcters"
         app:passwordToggleEnabled="true"
-        app:passwordToggleTint="@color/black"
+        app:passwordToggleTint="#0091EA"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
