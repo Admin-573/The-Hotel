@@ -48,7 +48,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/user_email"
             android:hint=" Enter Name"
-            android:drawableRight="@drawable/email_24"
+            android:drawableRight="@drawable/baseline_person_pin_24"
             android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
