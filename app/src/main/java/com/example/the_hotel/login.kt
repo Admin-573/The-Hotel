@@ -57,8 +57,7 @@ class login : AppCompatActivity() {
         }
 
         sign_up_here.setOnClickListener{
-            val signup_intent = Intent(this,get_start::class.java)
-            startActivity(signup_intent)
+            Toast.makeText(this,"Under Development",Toast.LENGTH_SHORT).show()
         }
 
     }

@@ -9,7 +9,6 @@ import android.widget.Button
 class MainActivity : AppCompatActivity() {
 
     lateinit var btn1 : Button
-    lateinit var btn2 : Button
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,16 +16,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         btn1 = findViewById(R.id.btn_get_start)
-        btn2 = findViewById(R.id.btn_login)
 
         btn1.setOnClickListener{
-            val intent_get_start = Intent(this,get_start::class.java)
+            val intent_get_start = Intent(this,login::class.java)
             startActivity(intent_get_start)
         }
 
-        btn2.setOnClickListener{
-            val intent_login = Intent(this,login::class.java)
-            startActivity(intent_login)
-        }
     }
 }
