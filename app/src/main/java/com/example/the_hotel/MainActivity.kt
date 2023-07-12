@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         //next Activity :-
         sta = findViewById(R.id.btn_get_start)
         sta.onSlideCompleteListener = object : SlideToActView.OnSlideCompleteListener {

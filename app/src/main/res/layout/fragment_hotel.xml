@@ -3,12 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EF9A9A"
     tools:context=".Hotel">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hotel Page" />
+        android:text="Hotel Ui Panel"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="28sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
 </FrameLayout>
