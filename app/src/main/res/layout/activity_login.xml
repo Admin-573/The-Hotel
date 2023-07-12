@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#272196F3"
+    android:background="#DCDCDC"
     tools:context=".login">
 
     <ImageView
@@ -47,7 +47,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/user_email"
-            android:hint=" Enter Name"
+            android:hint=" Enter UserName"
             android:drawableRight="@drawable/baseline_person_pin_24"
             android:inputType="textPersonName"
             android:layout_width="match_parent"
@@ -89,12 +89,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <Button
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_SignIn"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
         android:text="Sign In"
+        android:elevation="10dp"
         android:layout_width="match_parent"
         android:layout_height="55sp"/>
 

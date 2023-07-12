@@ -2,12 +2,12 @@ package com.example.the_hotel
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 
 class login : AppCompatActivity() {
 
@@ -43,8 +43,8 @@ class login : AppCompatActivity() {
         btn_signin.setOnClickListener{
             if(validation())
             {
-                val home_intent = Intent(this,home::class.java)
-                startActivity(home_intent)
+                val mainapp_intent = Intent(this,main_app::class.java)
+                startActivity(mainapp_intent)
             }
         }
 
@@ -65,7 +65,7 @@ class login : AppCompatActivity() {
     private fun validation() : Boolean{
 
         if(user_email_1!!.length()==0){
-            user_email_1!!.setError("Email Cannot Be Empty !")
+            user_email_1!!.setError("UserName Cannot Be Empty !")
             return false
         } else if (user_pass_1!!.length() == 0){
             user_pass_1!!.setError("Password Cannot Be Empty !")
