@@ -18,6 +18,7 @@ class login : AppCompatActivity() {
     lateinit var sign_up_here : TextView
 
     lateinit var btn_signin : Button
+    lateinit var btn_view : Button
     lateinit var btn_google : Button
     lateinit var btn_apple : Button
 
@@ -49,17 +50,17 @@ class login : AppCompatActivity() {
             {
                 val mainapp_intent = Intent(this,main_app::class.java)
                 startActivity(mainapp_intent)
-            } else {
                 val Usr = UserModel(name = user_name_1.toString(), pass = user_pass_1.toString())
                 val status = sqLiteHelper.insertUser(Usr)
                 if (status > -1){
-                    Toast.makeText(this,"Added...",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"Added...",Toast.LENGTH_SHORT).show()
                     clearEditText()
                 } else {
-                    Toast.makeText(this,"Not Added...",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"Not Added...",Toast.LENGTH_SHORT).show()
                 }
             }
         }
+
 
         btn_google.setOnClickListener{
             Toast.makeText(this,"Under Development",Toast.LENGTH_SHORT).show()

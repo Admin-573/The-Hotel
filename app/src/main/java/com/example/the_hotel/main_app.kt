@@ -25,11 +25,14 @@ class main_app : AppCompatActivity() {
                     loadFragment(Profile())
                     true
                 }
+                R.id.trend ->{
+                    loadFragment(Trend())
+                    true
+                }
                 R.id.settings -> {
                     loadFragment(Settings())
                     true
                 }
-
                 else -> {
                     false
                 }
