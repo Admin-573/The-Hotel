@@ -33,9 +33,9 @@ class MainActivity : AppCompatActivity() {
             override fun onSlideComplete(view: SlideToActView) {
                 val intent_login = Intent(applicationContext,login::class.java)
                 startActivity(intent_login)
+                sta.setCompleted(false,true)
             }
         }
-
         //imageSlider :-
         init()
         setUpTransformer()

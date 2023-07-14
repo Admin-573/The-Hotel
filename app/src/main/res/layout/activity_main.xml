@@ -9,33 +9,30 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/str1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/script"
-        android:text=" Find A Perfect Healing "
-        android:textColor="@color/black"
-        android:textSize="35sp"
+        android:layout_marginTop="32dp"
+        android:text="@string/str1"
+        android:textSize="29sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
 
     <TextView
+        android:id="@+id/str2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/script"
-        android:text=" Place For Your Health "
-        android:textColor="@color/black"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/viewPager2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715" />
+        android:text="@string/str2"
+        android:layout_marginTop="5dp"
+        android:textSize="27sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/str1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+       />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
@@ -51,17 +48,16 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/materialTextView"
-        android:layout_width="294dp"
-        android:layout_height="58dp"
-        android:fontFamily="@font/rubik_medium"
-        android:text="The-Hotel Provides You Better Way Of Thinking To Get Important Choices For Choosing The Best Not The Waste."
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_get_start"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewPager2"
-        app:layout_constraintVertical_bias="0.391" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/p1"
+        android:textSize="17sp"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_get_start"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
 
     <com.ncorti.slidetoact.SlideToActView
         android:id="@+id/btn_get_start"

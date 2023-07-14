@@ -5,30 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E0F7FA"
     tools:context=".login">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:src="@drawable/holidays"
-        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="15dp"
         android:layout_width="200dp"
         android:layout_height="200dp"/>
     
-    <TextView
-        android:text="Welcome Back!"
+    <com.google.android.material.textview.MaterialTextView
+        android:text="@string/welcome_back"
         android:textSize="32sp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
         android:layout_marginBottom="2dp"
-        android:textColor="@color/black"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
-    <TextView
-        android:text="Start managing your life in a better way"
+    <com.google.android.material.textview.MaterialTextView
+        android:text="@string/p2"
         android:textSize="18sp"
-        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -47,8 +47,8 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/user_name"
-            android:hint=" Enter UserName"
-            android:drawableRight="@drawable/baseline_person_pin_24"
+            android:hint="@string/enter_username"
+            android:drawableEnd="@drawable/baseline_person_pin_24"
             android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -62,7 +62,7 @@
         app:boxCornerRadiusTopStart="25dp"
         app:boxCornerRadiusTopEnd="25dp"
         app:boxCornerRadiusBottomStart="25dp"
-        app:placeholderText="Atleast 8 Charcters"
+        app:placeholderText="@string/error"
         app:passwordToggleEnabled="true"
         app:passwordToggleTint="#0091EA"
         android:layout_width="match_parent"
@@ -70,7 +70,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/user_password"
-            android:hint=" Enter Password"
+            android:hint="@string/enter_password"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -80,24 +80,25 @@
     <TextView
         android:id="@+id/forgot_pass"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="7dp"
         android:textColor="#0091EA"
-        android:text="Forget password ?"
-        android:layout_marginRight="35dp"
-        android:layout_gravity="right"
+        android:layout_gravity="end"
+        android:layout_marginEnd="37dp"
+        android:text="@string/forget_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_SignIn"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:text="Sign In"
-        android:layout_marginBottom="10dp"
-        android:elevation="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="55sp"/>
+        android:text="@string/sign_in"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="12dp"
+        android:translationZ="5dp"
+        android:stateListAnimator="@null"
+        android:layout_width="128dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
 
     <View
         android:layout_marginBottom="5dp"
@@ -115,35 +116,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:src="@drawable/google"
             android:layout_width="60dp"
             android:layout_height="60dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_google_signin"
-            android:text="Google"
+            android:text="@string/google"
             android:layout_width="wrap_content"
             android:layout_height="50sp"
-            android:layout_marginRight="10dp"/>
+            android:translationZ="5dp"
+            android:stateListAnimator="@null"
+            android:layout_marginEnd="10dp"/>
 
         <View
             android:background="@color/black"
             android:layout_width="2dp"
             android:layout_height="50dp"/>
 
-        <ImageView
+        <com.google.android.material.imageview.ShapeableImageView
             android:src="@drawable/apple"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:layout_width="50dp"
             android:layout_height="50dp"/>
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_apple_signin"
-            android:text="Apple"
+            android:text="@string/apple"
             android:layout_width="wrap_content"
             android:layout_height="50sp"
-            android:layout_marginRight="20dp"/>
+            android:translationZ="5dp"
+            android:stateListAnimator="@null"
+            android:layout_marginEnd="20dp"/>
 
     </LinearLayout>
 
@@ -154,20 +159,18 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="New To Our App ? "
+            android:text="@string/new1"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/txt_signup"
-            android:text="SignUp Here"
-            android:textColor="#0091EA"
+            android:text="@string/signup_here"
             android:textStyle="bold"
+            android:layout_marginStart="4dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
     </LinearLayout>
-
 </LinearLayout>
