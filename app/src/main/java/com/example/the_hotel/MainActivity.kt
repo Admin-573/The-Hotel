@@ -10,12 +10,13 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.button.MaterialButton
 import com.ncorti.slidetoact.SlideToActView
 import kotlin.math.abs
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var sta : SlideToActView
+    lateinit var sta : MaterialButton
 
     private lateinit var viewPager2: ViewPager2
     private lateinit var handler : Handler
@@ -29,12 +30,9 @@ class MainActivity : AppCompatActivity() {
 
         //next Activity :-
         sta = findViewById(R.id.btn_get_start)
-        sta.onSlideCompleteListener = object : SlideToActView.OnSlideCompleteListener {
-            override fun onSlideComplete(view: SlideToActView) {
-                val intent_login = Intent(applicationContext,login::class.java)
-                startActivity(intent_login)
-                sta.setCompleted(false,true)
-            }
+        sta.setOnClickListener {
+            val intentLogin = Intent(applicationContext,login::class.java)
+            startActivity(intentLogin)
         }
         //imageSlider :-
         init()

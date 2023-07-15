@@ -34,13 +34,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        app:boxCornerRadiusBottomEnd="25dp"
-        app:boxCornerRadiusTopStart="25dp"
-        app:boxCornerRadiusTopEnd="25dp"
-        app:boxCornerRadiusBottomStart="25dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
         app:placeholderText="Name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -48,7 +44,6 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/user_name"
             android:hint="@string/enter_username"
-            android:drawableEnd="@drawable/baseline_person_pin_24"
             android:inputType="textPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -56,15 +51,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        app:boxCornerRadiusBottomEnd="25dp"
-        app:boxCornerRadiusTopStart="25dp"
-        app:boxCornerRadiusTopEnd="25dp"
-        app:boxCornerRadiusBottomStart="25dp"
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
         app:placeholderText="@string/error"
         app:passwordToggleEnabled="true"
-        app:passwordToggleTint="#0091EA"
+        android:layout_marginTop="2dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -77,12 +69,11 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:id="@+id/forgot_pass"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:layout_marginTop="7dp"
         android:layout_marginBottom="7dp"
-        android:textColor="#0091EA"
         android:layout_gravity="end"
         android:layout_marginEnd="37dp"
         android:text="@string/forget_password"
@@ -90,70 +81,35 @@
         android:layout_height="wrap_content"/>
 
     <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.OutlinedButton"
         android:id="@+id/btn_SignIn"
         android:text="@string/sign_in"
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="12dp"
-        android:translationZ="5dp"
-        android:stateListAnimator="@null"
-        android:layout_width="128dp"
+        android:layout_width="197dp"
+        android:layout_height="52sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="17dp"
+        android:layout_marginEnd="10dp"
         android:layout_gravity="center"
-        android:layout_height="wrap_content"/>
-
-    <View
-        android:layout_marginBottom="5dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="@color/black"
-        android:layout_width="match_parent"
-        android:layout_height="2dp"/>
-
-    <LinearLayout
-        android:gravity="center"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:src="@drawable/google"
-            android:layout_width="60dp"
-            android:layout_height="60dp"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_google_signin"
-            android:text="@string/google"
-            android:layout_width="wrap_content"
-            android:layout_height="50sp"
-            android:translationZ="5dp"
-            android:stateListAnimator="@null"
-            android:layout_marginEnd="10dp"/>
-
-        <View
-            android:background="@color/black"
-            android:layout_width="2dp"
-            android:layout_height="50dp"/>
-
-        <com.google.android.material.imageview.ShapeableImageView
-            android:src="@drawable/apple"
-            android:layout_marginStart="5dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_apple_signin"
-            android:text="@string/apple"
-            android:layout_width="wrap_content"
-            android:layout_height="50sp"
-            android:translationZ="5dp"
-            android:stateListAnimator="@null"
-            android:layout_marginEnd="20dp"/>
-
-    </LinearLayout>
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="5dp"/>
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.Material3.Button.IconButton.Filled"
+        app:icon="@drawable/google"
+        app:iconPadding="12dp"
+        android:id="@+id/btn_google_signin"
+        android:text="@string/google"
+        android:layout_width="197dp"
+        android:layout_height="52sp"
+        android:translationZ="5dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="17dp"
+        android:stateListAnimator="@null"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="center" />
 
     <LinearLayout
         android:gravity="center"
+        android:layout_marginTop="12dp"
         android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -164,7 +120,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:id="@+id/txt_signup"
             android:text="@string/signup_here"
             android:textStyle="bold"
