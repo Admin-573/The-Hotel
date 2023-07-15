@@ -4,20 +4,96 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EF9A9A"
     tools:context=".Hotel">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/comic_neue"
+            android:text="Find Your"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/comic_neue"
+            android:text="Destination Here"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/person"
+            app:layout_constraintBottom_toBottomOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_search"
+            android:drawableLeft="@drawable/baseline_search_24"
+            android:drawablePadding="8dp"
+            android:hint="Search Here"
+            android:paddingLeft="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:fontFamily="@font/rubik_medium"
-        android:text="Hotel Ui Panel"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Hotels Near You"
         android:textColor="@color/black"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_view_all"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/txt_view_all" />
+
+    <TextView
+        android:id="@+id/txt_view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="View All"
+        android:textColor="#FF6D00"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
