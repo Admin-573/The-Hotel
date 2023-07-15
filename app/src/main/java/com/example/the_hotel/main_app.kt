@@ -25,8 +25,8 @@ class main_app : AppCompatActivity() {
                     loadFragment(Profile())
                     true
                 }
-                R.id.trend ->{
-                    loadFragment(Trend())
+                R.id.about_us ->{
+                    loadFragment(AboutUs())
                     true
                 }
                 R.id.settings -> {

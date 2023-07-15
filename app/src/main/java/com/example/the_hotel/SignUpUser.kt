@@ -15,7 +15,7 @@ class SignUpUser : AppCompatActivity() {
 
         binding.btnSignUp.setOnClickListener{
             if(validation()){
-                startActivity(Intent(this,login::class.java))
+                startActivity(Intent(this,main_app::class.java))
             }
         }
         binding.alreadyHaveAnAccount.setOnClickListener {

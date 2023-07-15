@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFE082"
-    tools:context=".Trend">
+    android:background="#FF7755"
+    tools:context=".AboutUs">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:fontFamily="@font/rubik_medium"
-        android:text="Trending Ui Panel"
+        android:text="About Us Panel"
         android:textColor="@color/black"
-        android:textSize="28sp"
+        android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

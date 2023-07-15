@@ -9,7 +9,7 @@
 
     <com.google.android.material.imageview.ShapeableImageView
         android:src="@drawable/holidays"
-        android:layout_marginStart="25dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="15dp"
         android:layout_width="200dp"
         android:layout_height="200dp"/>
@@ -17,7 +17,7 @@
     <com.google.android.material.textview.MaterialTextView
         android:text="@string/welcome_back"
         android:textSize="32sp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="2dp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -26,7 +26,7 @@
     <com.google.android.material.textview.MaterialTextView
         android:text="@string/p2"
         android:textSize="18sp"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="2dp"
         android:layout_width="wrap_content"
