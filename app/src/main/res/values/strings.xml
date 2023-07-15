@@ -17,4 +17,18 @@
     <string name="new1">New To Our App ?</string>
     <string name="signup_here">SignUp Here</string>
     <string name="getting_started">Getting Started</string>
+    <string name="find_your">Find Your</string>
+    <string name="destination_here">Destination Here</string>
+    <string name="search_here">Search Here</string>
+    <string name="hotels_near_you">Hotels Near You</string>
+    <string name="view_all">View All</string>
+    <string name="create_an_account">Create An Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_no">Phone No</string>
+    <string name="email_id">Email Id</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already have an account !</string>
+    <string name="signout">SignOut</string>
+    <string name="contact_us">Contact Us</string>
 </resources>
